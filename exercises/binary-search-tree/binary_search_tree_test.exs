@@ -3,7 +3,9 @@ if !System.get_env("EXERCISM_TEST_EXAMPLES") do
 end
 
 ExUnit.start()
-ExUnit.configure(exclude: :pending, trace: true)
+ExUnit.configure(
+#  exclude: :pending,
+  trace: true)
 
 defmodule BinarySearchTreeTest do
   use ExUnit.Case
